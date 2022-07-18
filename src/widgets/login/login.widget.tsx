@@ -1,6 +1,6 @@
 import React from "react";
 import { BoxS, FlexS, H1S, ButtonS } from "../../elements";
-import { useInput, useLogun } from "../../hooks";
+import { useInput, useLogun, useLogin } from "../../hooks";
 import { InputS } from "../../moduls";
 
 
@@ -8,6 +8,7 @@ const Login:React.FC = ():JSX.Element => {
     const {state: login, handleChange: handleChangeLogin} = useInput();
     const {state: password, handleChange: handleChangePassword} = useInput();
     const logun = useLogun() 
+    const log = useLogin()
     return(
         <FlexS
             flexDirection="column"
@@ -36,7 +37,7 @@ const Login:React.FC = ():JSX.Element => {
                 <BoxS
                     padding='14px 0'>
                     <InputS
-                        type='email'
+                        type='text'
                         padding='8px 16px'
                         borderRadius='8px'
                         width="420px"
@@ -64,7 +65,8 @@ const Login:React.FC = ():JSX.Element => {
                         background="#6365d4"
                         border="none"
                         color="#c2bbbb"
-                        radius="4px">
+                        radius="4px"
+                        onClick={() => {log()}}>
                             Login
                         </ButtonS> 
                     </BoxS>   
