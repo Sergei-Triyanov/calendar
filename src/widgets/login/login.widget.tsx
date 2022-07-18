@@ -81,7 +81,7 @@ const Login:React.FC = ():JSX.Element => {
                         border="none"
                         color="#c2bbbb"
                         radius="4px"
-                        onClick={() => {navigate('/logut', {replace: true})}}
+                        onClick={() => {navigate('/logun', {replace: true})}}
                         >
                             Logun
                         </ButtonS>
