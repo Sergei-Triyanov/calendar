@@ -1,8 +1,12 @@
 import React from "react";
 import { BoxS, FlexS, H1S } from "../../elements";
+import { useInput } from "../../hooks";
 import { InputS } from "../../moduls";
 
+
 const Login:React.FC = ():JSX.Element => {
+    const {state: login, handleChange: handleChangeLogin} = useInput();
+    const {state: password, handleChange: handleChangePassword} = useInput();
     return(
         <FlexS
             flexDirection="column"
@@ -28,21 +32,27 @@ const Login:React.FC = ():JSX.Element => {
                 border="2px solid #4de67b"
                 >
                 <form autoComplete="on" method="post">
-                <BoxS 
+                <BoxS
                     padding='14px 0'>
                     <InputS
                         type='email'
                         padding='8px 16px'
                         borderRadius='8px'
                         width="420px"
-                        placeholder='Please enter your name'/>
+                        placeholder='Please enter your name'
+                        onChange={handleChangeLogin}
+                        value={login}
+                        />
                 </BoxS>
                 <InputS
                     type='text'
                     padding='8px 16px'
                     borderRadius='8px'
                     width="420px"
-                    placeholder='Please enter your password'/>  
+                    placeholder='Please enter your password'
+                    onChange={handleChangePassword}
+                    value={password}
+                    />  
                 </form>
             </FlexS>
         </FlexS>
