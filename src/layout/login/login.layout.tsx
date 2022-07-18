@@ -1,12 +1,13 @@
 import React from "react";
 import { BoxS, FlexS, H1S, ButtonS } from "../../elements";
-import { useInput } from "../../hooks";
+import { useInput, useLogun } from "../../hooks";
 import { InputS } from "../../moduls";
 
 
 const Login:React.FC = ():JSX.Element => {
     const {state: login, handleChange: handleChangeLogin} = useInput();
     const {state: password, handleChange: handleChangePassword} = useInput();
+    const logun = useLogun() 
     return(
         <FlexS
             flexDirection="column"
@@ -74,7 +75,9 @@ const Login:React.FC = ():JSX.Element => {
                         background="#6365d4"
                         border="none"
                         color="#c2bbbb"
-                        radius="4px">
+                        radius="4px"
+                        onClick={() => {logun(login, password)}}
+                        >
                             Logun
                         </ButtonS>
                     </BoxS>
