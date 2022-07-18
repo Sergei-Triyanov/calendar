@@ -1,4 +1,5 @@
 import React from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 import { BoxS, FlexS, H1S, ButtonS } from "../../elements";
 import { useInput, useLogun, useLogin } from "../../hooks";
 import { InputS } from "../../moduls";
@@ -9,6 +10,8 @@ const Login:React.FC = ():JSX.Element => {
     const {state: password, handleChange: handleChangePassword} = useInput();
     const logun = useLogun() 
     const log = useLogin()
+    // react router dom
+    const navigate = useNavigate()
     return(
         <FlexS
             flexDirection="column"
@@ -78,7 +81,7 @@ const Login:React.FC = ():JSX.Element => {
                         border="none"
                         color="#c2bbbb"
                         radius="4px"
-                        onClick={() => {logun(login, password)}}
+                        onClick={() => {navigate('/logut', {replace: true})}}
                         >
                             Logun
                         </ButtonS>

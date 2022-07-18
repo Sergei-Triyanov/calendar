@@ -5,3 +5,5 @@ const Logun:React.FC = ():JSX.Element => {
         <div>Logun</div>
     )
 }
+
+export default Logun;

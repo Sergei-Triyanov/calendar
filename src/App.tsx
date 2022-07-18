@@ -1,12 +1,16 @@
 import React from 'react';
 import GlobalStyles from './global-styled.ts/global-styled';
-import { Login } from './widgets';
+import { Login, Logun } from './widgets';
+import { Routes, Route } from 'react-router-dom';
 
 const App: React.FC = (): JSX.Element => {
   return (
     <>
       <GlobalStyles />
-        <Login />
+      <Routes>
+        <Route path='/' element={<Login/>} />
+        <Route path='/logun' element={<Logun />} />
+      </Routes>
     </>
   )
 }
