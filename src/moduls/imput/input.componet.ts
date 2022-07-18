@@ -36,6 +36,12 @@ const InputS = styled.input<IInput>`
         background: #353535;
         box-shadow: 0 0 8px #6868685e;
     }
+    &:invalid {
+        border: 2px solid red;
+    }
+    &:valid {
+        border: 2px solid gren;
+    }
 `
 
 export default InputS;
