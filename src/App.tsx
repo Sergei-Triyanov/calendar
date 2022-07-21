@@ -2,14 +2,16 @@ import React from 'react';
 import GlobalStyles from './global-styled.ts/global-styled';
 import { Login, Logun } from './widgets';
 import { Routes, Route } from 'react-router-dom';
+import { Calendar, Log } from './layout'
 
 const App: React.FC = (): JSX.Element => {
   return (
     <>
       <GlobalStyles />
       <Routes>
-        <Route path='/' element={<Login/>} />
-        <Route path='/logun' element={<Logun />} />
+        <Route path='/' element={<Log title='Login' content={<Login />} />} />
+        <Route path='/logun' element={<Log title='Login' content={<Logun />} />} />
+        <Route path='/calendar' element={<Calendar />} />
       </Routes>
     </>
   )
