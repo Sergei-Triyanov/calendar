@@ -51,7 +51,7 @@ const Logun:React.FC = ():JSX.Element => {
                 <BoxS padding='8px 0'>
                     <ButtonS 
                     type='submit'
-                    padding="4px 8px"
+                    padding="8px 12px"
                     background="#313131"
                     border="none"
                     color="#fefefe"
