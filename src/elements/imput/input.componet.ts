@@ -37,10 +37,10 @@ const InputS = styled.input<IInput>`
         box-shadow: 0 0 8px #6868685e;
     }
     &:invalid {
-        border: 2px solid red;
+        border: 2px solid #f2a29e;
     }
     &:valid {
-        border: 2px solid gren;
+        border: 2px solid #aeeca1;
     }
 `
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalStyles from './global-styled.ts/global-styled';
+import GlobalStyles from './global-styled/global-styled';
 import { Login, Logun } from './widgets';
 import { Routes, Route } from 'react-router-dom';
 import { Calendar, Log } from './layout'

@@ -14,7 +14,7 @@ const Logun:React.FC = ():JSX.Element => {
                 <FlexS flexDirection="column">
                     <BoxS padding='4px 0'>
                         <FlexS alignItems="center" justifyContent="center">
-                            <TextS color="#0f0e0e" size="16px">Create your name.</TextS>
+                            <TextS color="#fefefe" size="16px">Create your name.</TextS>
                         </FlexS>
                     </BoxS>
                     <InputS
@@ -32,7 +32,7 @@ const Logun:React.FC = ():JSX.Element => {
             <FlexS flexDirection="column">
                         <BoxS padding='4px 0'>
                             <FlexS alignItems="center" justifyContent="center">
-                                <TextS color="#0f0e0e" size="16px">Create your password.</TextS>
+                                <TextS color="#fefefe" size="16px">Create your password.</TextS>
                             </FlexS>
                         </BoxS>
                     </FlexS>
@@ -52,9 +52,9 @@ const Logun:React.FC = ():JSX.Element => {
                     <ButtonS 
                     type='submit'
                     padding="4px 8px"
-                    background="#6365d4"
+                    background="#313131"
                     border="none"
-                    color="#c2bbbb"
+                    color="#fefefe"
                     radius="4px"
                     onClick={() => logun(name, password)}
                     >

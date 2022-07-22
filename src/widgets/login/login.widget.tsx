@@ -40,22 +40,22 @@ const Login:React.FC = ():JSX.Element => {
                 <BoxS padding="8px 0">
                     <ButtonS 
                     type='submit'
-                    padding="4px 8px"
-                    background="#6365d4"
+                    padding="8px 12px"
+                    background="#313131"
                     border="none"
-                    color="#c2bbbb"
+                    color="#fefefe"
                     radius="4px"
                     onClick={() => Login(login, password)}>
                         Login
                     </ButtonS> 
                 </BoxS>   
-                <BoxS paddingLeft='4px'>
+                <BoxS padding='8px 4px'>
                     <ButtonS 
                         type='submit'
-                        padding="4px 8px"
-                        background="#6365d4"
+                        padding="8px 12px"
+                        background="#616163"
                         border="none"
-                        color="#c2bbbb"
+                        color="#fefefe"
                         radius="4px"
                         onClick={() => {navigate('/logun', {replace: true})}}
                         >

@@ -10,6 +10,7 @@ interface IFlex {
     borderRadius?: string;
     shadow?: string;
     border?: string;
+    background?: string
 }
 
 const FlexS = styled.div<IFlex>`
@@ -23,6 +24,7 @@ const FlexS = styled.div<IFlex>`
     border-radius: ${props => props.borderRadius};
     border: ${props => props.border};
     box-shadow: ${props => props.shadow};
+    background: ${props => props.background};
 `
 
 export default FlexS;

@@ -7,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
         font-size: 14px;
         margin: 0;
         padding: 0;
-        background-color: #222;
+        background: linear-gradient(#797878 20%,#bebebe 80%);
     }
 `
 

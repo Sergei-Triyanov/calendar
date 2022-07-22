@@ -24,12 +24,12 @@ const Log:React.FC<ILog> = ({title, content}):JSX.Element =>{
         <FlexS
             flexDirection="column"
             width="480px"
-            height="180px"
-            backgroundColor="#57be76"
+            height="200px"
+            backgroundColor="#4c504d"
             alignItems="center"
             justifyContent="center"
             borderRadius="8px"
-            border="2px solid #4de67b"
+            border="2px solid #acb4af"
             >
             <form autoComplete="on" method="post" onSubmit={(event) => event.preventDefault()} >{
                 content
